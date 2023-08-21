@@ -48,7 +48,7 @@ const [showHeader, setShowHeader] =useState(false)
               </span>
             </span>
             <span className="talk">
-              <button>Talk Me</button>
+              <button>Let's talk</button>
             </span>
             <span className="toggle" onClick={()=> setShowHeader(true)} >
             {/* {

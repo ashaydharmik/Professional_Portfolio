@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import About from "../About/About";
+import Skills from "../Skills/Skills";
 const Home = () => {
   return (
     <>
@@ -66,6 +67,7 @@ const Home = () => {
 
       <div className="layout">
         <About/>
+        <Skills/>
       </div>
     </>
   );
