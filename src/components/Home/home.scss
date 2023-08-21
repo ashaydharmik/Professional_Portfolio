@@ -14,7 +14,7 @@
   height: calc(100vh - 5rem);
   display: flex;
   // margin-top: 4rem;
-  flex-direction: row;
+  flex-direction: column-reverse;
  
   // flex-flow: column-reverse;
   width: 100%;
@@ -51,7 +51,11 @@
     .heading {
       width: calc(100% - 10px);
       margin: 0 auto;
-      padding-top: 50px;
+      padding-top: 10px;
+      @include md{
+        padding-top: 50px;
+
+      }
       .hello {
         display: inline-block;
         font-weight: bolder;
@@ -87,7 +91,7 @@
       }
     }
     .description {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       font-weight: bold;
       // margin-left: 40px;
       color: rgb(46, 46, 46);
@@ -105,7 +109,11 @@
     .bio {
       width: calc(100% - 10px);
       //   margin: 10px auto;
-      margin-top: 3rem;
+      margin-top: 1rem;
+      @include md{
+        margin-top: 3rem;
+
+      }
       p {
         //  padding-right: 50px;
         text-align: left;
@@ -117,21 +125,24 @@
         font-weight: bold;
         font-size: 1.5rem;
         letter-spacing: 1px;
-       
+        text-align: center;
         @include md{
+          text-align: normal;
 font-weight: normal;
         }
       }
     }
     .buttons {
-      width: 100%;
+      width: 71%;
       opacity: 0;
       animation: slideTop 2s ease forwards;
       animation-delay: 0.7s;
-      margin-top: 4rem;
+      margin-top: 1rem;
+      margin-left:42px;
       @include md{
         margin-top: 3rem;
-
+       margin-left:auto;
+       width: 100%;
       }
       button {
         width: 15rem;
@@ -151,6 +162,7 @@ font-weight: normal;
         // filter: drop-shadow(-1px 6px 4px rgb(92, 92, 92));
         outline: none;
         cursor: pointer;
+        filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
         @include md{
           gap: 10px;
           width: 15rem;
@@ -173,7 +185,10 @@ font-weight: normal;
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 1s;
-    display: none;
+    
+    // box-sizing: border-box;
+    // box-sizing: content-box;
+    // display: none;
     @include md{
       display: block;
     }
@@ -181,29 +196,54 @@ font-weight: normal;
       // max-width: 100%;
       // max-height: 100%;
       &#user {
-        width: 470px;
-        height: 533px;
-        padding-left: 30px;
+        padding-left: 0px;
         position: relative;
+        top: 7px;
+        width: 186px;
+        
+        height: 166px;
+        animation: none;
+        @include md{
+          animation: animateUser 4s ease infinite;
+          width: 470px;
+          height: 533px;
+          padding-left: 30px;
+       
         top: 19px;
-        animation: animateUser 4s ease infinite;
+        // animation: animateUser 4s ease infinite;
+        
+        }
       }
       &#splash {
-        position: absolute;
+position: absolute;
+        top: -3%;
+        left: -19%;
+        transform: translate(-50%, -50%);
+        animation: none;
+        /* transform: rotateX(167deg); */
+        transform: rotateZ(-5deg);
+        width: 239px;
+        height: 202px;
+
+
+       
+        /* transform: rotateX(167deg); */
+      
+        @include md{
+          animation: blink 1s ease-in-out infinite;
+          width: 633px;
+        height: 340px;
         top: 20%;
         left: -14%;
-        transform: translate(-50%, -50%);
-        width: 633px;
-        height: 340px;
-        animation: blink 1s ease-in-out infinite;
-        /* transform: rotateX(167deg); */
         transform: rotateZ(-12deg);
+        }
       }
     }
   }
   .social {
     // background-color: antiquewhite;
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
@@ -212,6 +252,7 @@ font-weight: normal;
     // display: none;
     width: 7%;
     // font-size: 20px;
+
     @include md{
       width: 2%;
       display: flex;

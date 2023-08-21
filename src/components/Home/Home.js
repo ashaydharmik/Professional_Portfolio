@@ -27,7 +27,7 @@ const Home = () => {
           <div className="heading">
             <span className="hello">Hello_</span>
             <h1>
-              {" "}
+              
               I'm <span>Ashay Dharmik</span>
             </h1>
           </div>
@@ -38,8 +38,8 @@ const Home = () => {
                   strings: [
                     "Web Developer",
                      "FrontEnd Developer",
-                     "Full Stack Developer",
-                     "Mern Stack Developer" 
+                     "MernStack Developer",
+                     "FullStack Developer",
                 ],
                   autoStart: true,
                   loop: true,

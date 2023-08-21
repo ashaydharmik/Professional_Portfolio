@@ -7,8 +7,8 @@
     align-items: center;
     width: 100%;
     @include md{
-    width:calc(100% - 20px);
-
+    width:100%;
+background-color: antiquewhite;
 }
 .heading{
     margin: 0 auto;
@@ -167,6 +167,7 @@ padding-top: 0.9rem;
     transition: transform 0.2s, box-shadow 0.2s;
     outline: none;
     cursor: pointer;
+    filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
         span{
             position: relative;
             padding-left: 5px;
