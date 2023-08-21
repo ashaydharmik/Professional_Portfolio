@@ -1,0 +1,108 @@
+@import "../../css-config/mixins.scss";
+
+.cart-container {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  .background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .cartWindow {
+    
+    background: rgb(241,239,246);
+background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991275733926383) 99%);
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    animation: cartPopUp 0.3s ease-in-out forwards;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .cart-heading {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+
+      box-shadow: 0px 4px 10px #626161;
+    
+      h1 {
+        font-size: 25px;
+       
+      }
+      .cart-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        svg {
+          font-size: 23px;
+          padding: 5px;
+          padding-top: 8px;
+         
+        }
+       
+      }
+    }
+    .nav-links {
+        margin-top: 30px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          align-items: center;
+          justify-content: center;
+          
+          li {
+            width: 100%;
+            text-align: center;
+            font-weight: bolder;
+            font-family: "Barriecito", cursive;
+            filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
+            height: 52px;
+            /* top: 10px; */
+            padding-top: 11px;
+            &:hover{
+                background: rgb(146,5,226);
+                
+            }
+            a {
+                font-size: 2.8rem;
+                position: relative;
+              display: inline-block;
+              // color: white;
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+            font-weight: 900;
+             
+              
+            }
+          }
+        }
+      }
+  }
+  
+  
+}
+
+@keyframes cartPopUp {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
