@@ -88,7 +88,7 @@ const Skills = () => {
               <div className="circle-content">
                 <div className="circle-1">
                   <div className="circle">
-                    <p>90%</p>
+                    <p>80%</p>
                   </div>
                   <div id="desc">
                     <p>Communication</p>

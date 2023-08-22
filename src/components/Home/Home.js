@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
+import Experience from "../Experience/Experience";
 const Home = () => {
   return (
     <>
@@ -68,6 +69,7 @@ const Home = () => {
       <div className="layout">
         <About/>
         <Skills/>
+        <Experience/>
       </div>
     </>
   );

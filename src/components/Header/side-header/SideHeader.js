@@ -20,8 +20,9 @@ const SideHeader = ({setShowHeader}) => {
               <li><a href='#' style={{ "--i": 1 }}>Home</a></li>
               <li><a href='#' style={{ "--i": 2 }}>About</a></li>
               <li><a href='#' style={{ "--i": 3 }}>Skills</a></li>
-              <li><a href='#' style={{ "--i": 4 }}>Portfolio</a></li>
-              <li><a href='#' style={{ "--i": 5 }}>Contact</a></li>
+              <li><a href='#' style={{ "--i": 4 }}>Experience</a></li>
+              <li><a href='#' style={{ "--i": 5 }}>Portfolio</a></li>
+              <li><a href='#' style={{ "--i": 6 }}>Contact</a></li>
               </ul>
             </div>
         </div>
