@@ -9,6 +9,7 @@ import Typewriter from "typewriter-effect";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Experience from "../Experience/Experience";
+import Portfolio from "../Portfolio/Portfolio";
 const Home = () => {
   return (
     <>
@@ -70,6 +71,7 @@ const Home = () => {
         <About/>
         <Skills/>
         <Experience/>
+        <Portfolio/>
       </div>
     </>
   );
