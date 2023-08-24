@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./portfolio.scss";
 import { projectData } from "../../Data/projectData";
-import {FaGithub} from "react-icons/fa"
-import {FaGlobe} from "react-icons/fa"
+import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 
 const Portfolio = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(projectData);
 
-  let filters = ["Web App", "Dynamic WebPage","Static WebPage","Figma"];
+  let filters = ["Web App", "Dynamic WebPage", "Static WebPage", "Figma"];
 
   const handleFilterButtonClick = (selectedCategory) => {
     if (selectedFilters.includes(selectedCategory)) {
@@ -36,6 +36,7 @@ const Portfolio = () => {
       setFilteredItems([...projectData]);
     }
   };
+
   return (
     <>
       <div className="port-container">
@@ -65,18 +66,22 @@ const Portfolio = () => {
                 </div>
                 <div className="pro-name">
                   <p>{item.name} </p>
-                <p>
-                  <a href={item.github} target="_blank" ><FaGithub /></a>
-                  &ensp;
-                  <a href={item.host} target="_blank"><FaGlobe /></a>
-                </p>
+                  <p>
+                    <a href={item.github} target="_blank">
+                      <FaGithub />
+                    </a>
+                    &ensp;
+                    <a href={item.host} target="_blank">
+                      <FaGlobe />
+                    </a>
+                  </p>
                 </div>
-                {/* <div className="category">
+                <div className="category">
                   <p>{item.category}</p>
-                  </div> */}
+                </div>
                 <div className="desc">
                   <p>{item.description}</p>
-                  </div>
+                </div>
               </div>
             ))}
           </div>

@@ -3,7 +3,7 @@
 .port-container {
   width: 100%;
   margin-top: 20px;
-  height: 100vh;
+  height: 100%;
   @include md{
     margin-top: 40px;
   }
@@ -88,7 +88,7 @@
         flex-wrap: wrap;
         /* gap: 10px; */
         width: 170px;
-        height: 250px;
+        height: 265px;
         background-color: antiquewhite;
         /* overflow: hidden; */
         align-items: center;

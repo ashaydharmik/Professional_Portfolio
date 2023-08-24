@@ -10,6 +10,7 @@ import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Experience from "../Experience/Experience";
 import Portfolio from "../Portfolio/Portfolio";
+import Contact from "../Contact/Contact";
 const Home = () => {
   return (
     <>
@@ -29,7 +30,6 @@ const Home = () => {
           <div className="heading">
             <span className="hello">Hello_</span>
             <h1>
-              
               I'm <span>Ashay Dharmik</span>
             </h1>
           </div>
@@ -39,10 +39,10 @@ const Home = () => {
                 options={{
                   strings: [
                     "Web Developer",
-                     "FrontEnd Developer",
-                     "MernStack Developer",
-                     "FullStack Developer",
-                ],
+                    "FrontEnd Developer",
+                    "MernStack Developer",
+                    "FullStack Developer",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
@@ -68,10 +68,11 @@ const Home = () => {
       </section>
 
       <div className="layout">
-        <About/>
-        <Skills/>
-        <Experience/>
-        <Portfolio/>
+        <About />
+        <Skills />
+        <Experience />
+        <Portfolio />
+        <Contact />
       </div>
     </>
   );
