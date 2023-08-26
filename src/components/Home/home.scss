@@ -200,9 +200,9 @@ font-weight: normal;
         position: relative;
         top: 7px;
         width: 186px;
-        
+        animation: user 4s ease infinite;
         height: 166px;
-        animation: none;
+        // animation: none;
         @include md{
           animation: animateUser 4s ease infinite;
           width: 470px;
@@ -226,7 +226,7 @@ position: absolute;
         height: 202px;
 
 
-       
+        animation: blink 1s ease-in-out infinite;
         /* transform: rotateX(167deg); */
       
         @include md{
@@ -271,12 +271,12 @@ position: absolute;
 }
 
 
-@keyframes animateUser {
-  50% {
-    right: 28px;
-    top: 4px;
-  }
-}
+// @keyframes animateUser {
+//   50% {
+//     right: 28px;
+//     top: 4px;
+//   }
+// }
 @keyframes animateBg {
   50% {
     top: 40%;
@@ -350,5 +350,14 @@ position: absolute;
   }
   50% {
     transform: translateX(20px);
+  }
+}
+@keyframes user {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
   }
 }

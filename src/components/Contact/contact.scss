@@ -1,9 +1,27 @@
 @import "../css-config/mixins.scss";
 
-.contact-container {
-  margin-top: 10rem;
+
+#seperator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  // margin-top: 17px;
+  @include md{
+    display: none;
+}
+  img{
+      width: 200px;
+  height: 14px;
+  }
+}
+.contact-container {
+  // margin-top: 10rem;
+  width: 100%;
+  @include md{
+    
+    margin-top: 40px;
+  }
   .heading {
     margin: 0 auto;
     /* padding: 20px; */
@@ -33,6 +51,9 @@
     flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
+    @include md {
+      flex-direction: row;
+    }
     .con-left {
       display: flex;
       flex-direction: column;
@@ -42,7 +63,10 @@
       margin: 13px auto;
       background-color: grey;
       border-radius: 5px;
-
+      @include md {
+        width: 35%;
+        margin: 30px auto;
+      }
       .photo {
         width: 100%;
         display: flex;
@@ -52,6 +76,10 @@
           border-radius: 5px;
           width: 279px;
           height: 208px;
+          @include md {
+            width: 80%;
+            height: 208px;
+          }
         }
       }
       .desc {
@@ -61,16 +89,24 @@
         flex-direction: column;
         justify-content: center;
         padding: 10px;
+        @include md {
+          width: calc(100% - 12rem);
+          padding: 0;
+        }
         h1 {
           text-align: center;
+          @include md {
+            font-size: 2.5rem;
+          }
         }
         p {
           margin-top: 10px;
           font-size: 1.7rem;
           font-weight: 600;
           text-align: justify;
-          span{
-              color: rgb(220, 220, 220);
+
+          span {
+            color: rgb(220, 220, 220);
           }
         }
         h2 {
@@ -78,26 +114,198 @@
           margin-top: 2rem;
         }
       }
-      .social{
+      .social {
         display: flex;
         gap: 10px;
         justify-content: center;
-        p{
-            width: fit-content;
-            padding: 5px;
-            background-color: rgb(54, 54, 54);
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 20px;
-            &:hover{
-                background-color: rgb(0, 0, 0);
-            }
+        p {
+          width: fit-content;
+          padding: 5px;
+          background-color: rgb(54, 54, 54);
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 20px;
+          &:hover {
+            background-color: rgb(0, 0, 0);
+          }
         }
-        svg{
-            font-size: 3rem;
-            color: white;
+        svg {
+          font-size: 3rem;
+          color: white;
         }
       }
     }
+    .con-right {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 10px);
+      justify-content: center;
+      align-items: center;
+      margin: 13px auto;
+      background-color: grey;
+      border-radius: 5px;
+      @include md {
+        width: 60%;
+        margin: 30px auto;
+        align-items: normal;
+        justify-content: normal;
+      }
+      .form {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        @include md {
+          width: calc(100% - 50px);
+          margin: 30px auto;
+        }
+        .name-ph {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+          @include md {
+            margin-bottom: 20px;
+          }
+          .input-div {
+            margin: 5px 0px;
+            @include md {
+              margin: 10px 0px;
+            }
+            p {
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin-bottom: 5px;
+              @include md {
+                margin-bottom: 5px;
+                font-size: 1.9rem;
+              }
+            }
+            input {
+              width: 100%;
+              height: 23px;
+              border-radius: 5px;
+              border: none;
+              padding: 0px 2px;
+              outline: none;
+              background-color: rgb(54, 54, 54);
+              color: white;
+              @include md {
+                height: 39px;
+                font-size: 2rem;
+                padding: 0px 4px;
+              }
+            }
+          }
+        }
+        .email {
+          margin: 10px 0px;
+
+          p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            @include md {
+              margin-bottom: 5px;
+              font-size: 1.9rem;
+            }
+          }
+          input {
+            width: 100%;
+            height: 23px;
+            border-radius: 5px;
+            border: none;
+            padding: 0px 2px;
+            outline: none;
+            background-color: rgb(54, 54, 54);
+            color: white;
+            @include md {
+              height: 39px;
+              margin-bottom: 15px;
+              font-size: 2rem;
+                padding: 0px 4px;
+            }
+          }
+        }
+        .text-area {
+          margin: 10px 0px;
+          p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            @include md {
+              margin-bottom: 5px;
+              font-size: 1.9rem;
+            }
+          }
+          textarea {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            border: none;
+            padding: 2px 2px;
+            background-color: rgb(54, 54, 54);
+            color: white;
+            @include md{
+              height: 132px;
+              font-size: 2rem;
+                padding: 0px 4px;
+            }
+          }
+        }
+        .buttons {
+          margin: 10px 0px;
+          button {
+            width: 100%;
+            height: 37px;
+            padding: 5px 0px;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            @include md{
+              font-size: 2rem;
+
+            }
+          }
+        }
+      }
+      .successMsg,
+      .errMsg {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding: 2px 2px 6px 2px;
+
+       
+        span {
+          color: rgb(0, 255, 21);
+          // position: relative;
+          width: fit-content;
+          animation: success 1.5s ease-in-out infinite;
+          // background-color: aliceblue;
+
+          font-size: 1.5rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes success {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
   }
 }

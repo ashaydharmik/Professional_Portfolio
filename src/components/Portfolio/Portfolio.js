@@ -3,7 +3,7 @@ import "./portfolio.scss";
 import { projectData } from "../../Data/projectData";
 import { FaGithub } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
-
+import seperator from "../assets/seperator.png"
 const Portfolio = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(projectData);
@@ -24,6 +24,7 @@ const Portfolio = () => {
   }, [selectedFilters]);
 
   const filterItems = () => {
+
     if (selectedFilters.length > 0) {
       let tempItems = selectedFilters.map((selectedCategory) => {
         let temp = projectData.filter(
@@ -39,6 +40,10 @@ const Portfolio = () => {
 
   return (
     <>
+     <div id="seperator">
+
+<img src={seperator} alt="" width="20px" height="5px"/>
+</div>
       <div className="port-container">
         <div className="heading">
           <h1>Portfolio</h1>

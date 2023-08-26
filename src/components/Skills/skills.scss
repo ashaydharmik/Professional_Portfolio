@@ -1,12 +1,27 @@
 @import "../css-config/mixins.scss";
 
+
+#seperator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 17px;
+  @include md{
+    display: none;
+}
+  img{
+      width: 200px;
+  height: 14px;
+  }
+}
 .skill-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  // margin-bottom: 15rem;
   @include md {
+    margin-top: 30px;
   
     height: 100vh;
     // background-color: #a3c0f4;

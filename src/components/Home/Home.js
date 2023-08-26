@@ -11,19 +11,23 @@ import Skills from "../Skills/Skills";
 import Experience from "../Experience/Experience";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
+import { Link } from "react-router-dom";
 const Home = () => {
+
+
+  
   return (
     <>
       <section className="home">
         <div className="social">
           <p style={{ "--i": 1 }}>
-            <FaInstagram />
+           <a href="https://www.instagram.com/i_ashay07/" target="_blank"><FaInstagram /></a>
           </p>
           <p style={{ "--i": 2 }}>
-            <FaLinkedin />
+          <a href="https://www.linkedin.com/in/ashay-dharmik-10aab4207/" target="_blank"><FaLinkedin /></a>
           </p>
           <p style={{ "--i": 3 }}>
-            <FaGithub />
+          <a href="https://github.com/ashaydharmik" target="_blank"><FaGithub /></a>
           </p>
         </div>
         <div className="content_one">
@@ -57,8 +61,8 @@ const Home = () => {
             </p>
           </div>
           <div className="buttons">
-            <button>Download CV</button>
-            <button>Hire Me</button>
+          <a href="https://drive.google.com/file/d/1AY-Z0aO9kZ3ESkODeB7ImMvz9XsLB1Er/view?usp=drive_link" target="_blank"><button>Download CV</button></a>
+          <Link to={"/about"}><button>Hire Me</button></Link>
           </div>
         </div>
         <div className="content_two">

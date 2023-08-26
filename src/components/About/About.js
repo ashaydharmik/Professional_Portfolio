@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./about.scss";
 import { FaUserAlt } from "react-icons/fa";
 import { ImPhone } from "react-icons/im";
@@ -7,11 +7,29 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
 import { AiFillCaretDown } from "react-icons/ai";
+import seperator from "../assets/seperator.png"
 import bg2 from "../assets/bg2.jpg"
 import person2 from "../assets/person2.png"
+// import Skills from "../Skills/Skills";
 const About = () => {
+  const targetSectionRef = useRef(null)
+
+  const handleScroll = () => {
+    const yOffset = 100;
+    const targetSection = document.getElementById('targetSection');
+    
+    if (targetSection) {
+      const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
+    <div id="seperator">
+
+    <img src={seperator} alt="" width="20px" height="5px"/>
+    </div>
       <div className="about-container">
         <div className="heading">
         <h1>About Me</h1>
@@ -72,13 +90,14 @@ const About = () => {
             </div>
           </div>
           <div className="about-more">
-            <button>Know more <span>
+            <button  onClick={handleScroll}>Know more <span>
             <AiFillCaretDown/>
               </span></button>
           </div>
         </div>
         </div>
       </div>
+       
     </>
   );
 };
