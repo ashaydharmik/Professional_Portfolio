@@ -10,8 +10,19 @@ import { AiFillCaretDown } from "react-icons/ai";
 import seperator from "../assets/seperator.png"
 import bg2 from "../assets/bg2.jpg"
 import person2 from "../assets/person2.png"
+import { useLocation } from 'react-router-dom';
 // import Skills from "../Skills/Skills";
 const About = () => {
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/about';
+  const isMobileView = window.innerWidth<=640; 
+  const pageStyle = {
+    marginTop: isAboutPage ? (isMobileView? '10px' : '2rem') : '10rem',
+  };
+
+  // const shouldHideMobileDiv = isMobileView && isAboutPage;
+
+
   const targetSectionRef = useRef(null)
 
   const handleScroll = () => {
@@ -24,20 +35,22 @@ const About = () => {
     }
   };
 
+
+
   return (
     <>
-    <div id="seperator">
+    <div id="seperator" >
 
     <img src={seperator} alt="" width="20px" height="5px"/>
     </div>
-      <div className="about-container">
+      <div className="about-container" style={{pageStyle}}>
         <div className="heading">
         <h1>About Me</h1>
         </div>
         <div className="about-content">
 
         <div className="about-img">
-          <img src={bg2} alt="" id="bg-2" />
+          {/* <img src={bg2} alt="" id="bg-2" /> */}
           <img src={person2} alt="" id="person-2"/>
         </div>
         <div className="img-info">
