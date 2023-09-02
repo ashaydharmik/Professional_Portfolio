@@ -17,7 +17,7 @@ const About = () => {
   const isAboutPage = location.pathname === '/about';
   const isMobileView = window.innerWidth<=640; 
   const pageStyle = {
-    marginTop: isAboutPage ? (isMobileView? '10px' : '2rem') : '10rem',
+    marginTop: isAboutPage ? (isMobileView? '10px' : '2rem') : '5rem',
   };
 
   // const shouldHideMobileDiv = isMobileView && isAboutPage;
