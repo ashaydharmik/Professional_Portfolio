@@ -17,10 +17,10 @@
 }
 .port-container {
   width: 100%;
-  // margin-top: 20px;
+  margin-top: 30px;
   height: 100%;
   @include md{
-    margin-top: 5rem;
+    // margin-top: 15rem;
     margin-bottom: 5rem;
 
   }
@@ -39,7 +39,9 @@
       font-size: 3.3rem;
       font-weight: bolder;
       letter-spacing: 1px;
+      color: white;
       font-family: cursive;
+      filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
       @include md {
         //   padding-bottom: 1rem;
         font-size: 4rem;
@@ -63,11 +65,12 @@
         width: 100%;
       }
       button {
-        border: 1px solid #000;
+        border: 1px solid #ffffff;
         background: transparent;
         margin: 5px 5px;
         border-radius: 5px;
         padding: 5px 10px;
+        color: white;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         font-size: 1.1rem;
@@ -76,11 +79,12 @@
         @include md{
         padding: 10px 15px;
         font-size: 1.5rem;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+        box-shadow: 3px 3px 0px 0px rgb(126, 125, 125);
       }
         &.active {
-          background-color: #1e293b;
-          color: #fff;
+          background-color: #ffffff;
+          color:#000000;
+          filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
         }
       }
     }
@@ -106,7 +110,7 @@
         /* gap: 10px; */
         width: 170px;
         height: 265px;
-        background-color: antiquewhite;
+        background-color: #16161a;
         /* overflow: hidden; */
         align-items: center;
         padding-top: 10px;
@@ -135,12 +139,17 @@
           p {
             font-size: 1.3rem;
             font-weight: bold;
+            color: white;
             @include md{
               font-size: 1.7rem;
                letter-spacing: 1px;
             }
             svg {
               font-size: 1.5rem;
+              color: #9000ff;
+              &:hover{
+                color: white;
+              }
               @include md{
                 font-size: 1.7rem;
                 margin-top: 5px;

@@ -40,10 +40,10 @@ const Portfolio = () => {
 
   return (
     <>
-     <div id="seperator">
+     {/* <div id="seperator">
 
 <img src={seperator} alt="" width="20px" height="5px"/>
-</div>
+</div> */}
       <div className="port-container">
         <div className="heading">
           <h1>Portfolio</h1>

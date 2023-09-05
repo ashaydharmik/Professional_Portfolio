@@ -38,10 +38,10 @@ const Contact = () => {
   };
   return (
     <>
-    <div id="seperator">
+    {/* <div id="seperator">
 
 <img src={seperator} alt="" width="20px" height="5px"/>
-</div>
+</div> */}
       <div className="contact-container">
         <div className="heading">
           <h1>Contact Me</h1>
@@ -59,10 +59,10 @@ const Contact = () => {
                 make a meaningful impact. "
               </p>
               <p>
-                <span>Phone: </span>+91 7020967445
+                <span>Phone : </span>+91 7020967445
               </p>
               <p>
-                <span>Email: </span>ashaydharmik807@gmail.com
+                <span>Email : </span>ashaydharmik807@gmail.com
               </p>
               <h2>FIND ME IN</h2>
             </div>

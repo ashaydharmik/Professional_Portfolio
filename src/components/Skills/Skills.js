@@ -7,10 +7,10 @@ import seperator from "../assets/seperator.png"
 const Skills = ()  => {
   return (
     <>
-<div id="seperator">
+{/* <div id="seperator">
 
 <img src={seperator} alt="" width="20px" height="5px"/>
-</div>
+</div> */}
 
       <div className="skill-container" id="targetSection">
         <div className="heading">

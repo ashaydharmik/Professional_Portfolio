@@ -12,10 +12,10 @@ import seperator from "../assets/seperator.png"
 const Experience = () => {
   return (
     <>
-     <div id="seperator">
+     {/* <div id="seperator">
 
 <img src={seperator} alt="" width="20px" height="5px"/>
-</div>
+</div> */}
       <div className="exp-container">
         <div className="heading">
           <h1>Experience</h1>
@@ -24,7 +24,7 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="Till 2017"
-            iconStyle={{backgroundImage: "linear-gradient(135deg, #8d93f3 10%, #000DFF 100%)", color: "white" }}
+            iconStyle={{background: "#9000ff", color: "white" }}
             icon={<MdSchool />}
             
           >
@@ -37,7 +37,7 @@ const Experience = () => {
             className="vertical-timeline-element--education"
             date="2017 - 2020"
             gap="5px"
-            iconStyle={{backgroundImage: "linear-gradient(135deg, #8d93f3 10%, #000DFF 100%)", color: "white" }}
+            iconStyle={{background: "#9000ff", color: "white" }}
             icon={<MdSchool />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -48,7 +48,7 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2020 - 2023"
-            iconStyle={{backgroundImage: "linear-gradient(135deg, #8d93f3 10%, #000DFF 100%)", color: "white" }}
+            iconStyle={{background: "#9000ff", color: "white" }}
             icon={<FaUniversity />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -59,7 +59,7 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="26-Sept-2022  to  26-Mar-2023"
-            iconStyle={{backgroundImage: "linear-gradient(135deg, #8d93f3 10%, #000DFF 100%)", color: "white"}}
+            iconStyle={{background: "#9000ff", color: "white"}}
             icon={< FaBuilding/>}
             
           >
@@ -72,7 +72,7 @@ const Experience = () => {
             className="vertical-timeline-element--education"
             date="29-Mar-2023
             to  29-May-2023 "
-            iconStyle={{backgroundImage: "linear-gradient(135deg, #8d93f3 10%, #000DFF 100%)", color: "white" }}
+            iconStyle={{background: "#9000ff", color: "white" }}
             icon={<FaBuilding />}
           >
             <h3 className="vertical-timeline-element-title">

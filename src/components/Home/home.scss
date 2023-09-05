@@ -140,8 +140,9 @@ font-weight: normal;
       opacity: 0;
       animation: slideTop 2s ease forwards;
       animation-delay: 0.7s;
-      margin-top: 1rem;
-      margin-left:66px;
+      margin-top: 0rem;
+      margin-left: 66px;
+      padding-bottom: 2rem;
       @include md{
         margin-top: 3rem;
        margin-left:auto;

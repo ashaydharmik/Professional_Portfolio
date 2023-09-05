@@ -16,11 +16,11 @@
   }
 }
 .contact-container {
-  // margin-top: 10rem;
+  margin-top: 30px;
   width: 100%;
   @include md{
     
-    margin-top: 5rem;
+    // margin-top: 10rem;
     margin-bottom: 5rem;
   }
   .heading {
@@ -39,6 +39,8 @@
       font-weight: bolder;
       letter-spacing: 1px;
       font-family: cursive;
+      color: white;
+      filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
       @include md {
         //   padding-bottom: 1rem;
         font-size: 4rem;
@@ -62,7 +64,7 @@
       justify-content: center;
       // align-items: center;
       margin: 13px auto;
-      background-color: grey;
+      background-color: #16161a;
       border-radius: 5px;
       @include md {
         width: 35%;
@@ -80,6 +82,7 @@
           @include md {
             width: 80%;
             height: 208px;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -96,6 +99,7 @@
         }
         h1 {
           text-align: center;
+          color: white;
           @include md {
             font-size: 2.5rem;
           }
@@ -105,20 +109,22 @@
           font-size: 1.7rem;
           font-weight: 600;
           text-align: justify;
-
+          color: #9e9fa1;
           span {
-            color: rgb(220, 220, 220);
+            color: rgb(255, 255, 255);
           }
         }
         h2 {
           font-size: 2rem;
           margin-top: 2rem;
+          color: white;
         }
       }
       .social {
         display: flex;
         gap: 10px;
         justify-content: center;
+        align-items: center;
         p {
           width: fit-content;
           padding: 5px;
@@ -127,12 +133,12 @@
           cursor: pointer;
           margin: 20px;
           &:hover {
-            background-color: rgb(0, 0, 0);
+            background-color:rgb(82, 82, 82);
           }
         }
         svg {
           font-size: 3rem;
-          color: white;
+          color: #9000ff;
         }
       }
     }
@@ -143,7 +149,7 @@
       justify-content: center;
       align-items: center;
       margin: 13px auto;
-      background-color: grey;
+      background-color: #16161a;
       border-radius: 5px;
       @include md {
         width: 60%;
@@ -162,6 +168,7 @@
           display: flex;
           flex-direction: column;
           margin-bottom: 10px;
+          // color: white;
           @include md {
             margin-bottom: 20px;
           }
@@ -174,6 +181,7 @@
               font-size: 1.5rem;
               font-weight: bold;
               margin-bottom: 5px;
+              color: white;
               @include md {
                 margin-bottom: 5px;
                 font-size: 1.9rem;
@@ -203,6 +211,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 5px;
+            color: white;
             @include md {
               margin-bottom: 5px;
               font-size: 1.9rem;
@@ -231,6 +240,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 5px;
+            color: white;
             @include md {
               margin-bottom: 5px;
               font-size: 1.9rem;
@@ -243,6 +253,7 @@
             border: none;
             padding: 2px 2px;
             background-color: rgb(54, 54, 54);
+            outline: none;
             color: white;
             @include md{
               height: 132px;
@@ -253,6 +264,9 @@
         }
         .buttons {
           margin: 10px 0px;
+          @include md{
+            margin: 20px 0px;
+          }
           button {
             width: 100%;
             height: 37px;
@@ -262,12 +276,14 @@
             text-align: center;
             font-size: 1.5rem;
             font-weight: bold;
-            background-color: black;
+          background-color: #9000ffd4;
+          box-shadow: 5px 5px 0 rgb(88 0 109 / 96%);
+          filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
             color: white;
             cursor: pointer;
             @include md{
               font-size: 2rem;
-
+              height: 45px;
             }
           }
         }

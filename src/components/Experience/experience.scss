@@ -18,11 +18,11 @@
 .exp-container {
   width: 100%;
   
-  // margin-top: 20px;
+  margin-top: 30px;
 //   margin-bottom: 10px;
 @include md{
   height: 100vh;
-  margin-top: 5rem;
+  // margin-top: 15rem;
   margin-bottom: 5rem;
 }
   .heading {
@@ -41,8 +41,10 @@
         font-weight: bolder;
       letter-spacing: 1px;
       font-family: cursive;
+      color: white;
+      filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
       @include md {
-        //   padding-bottom: 1rem;
+          margin-bottom: 4rem;
         font-size: 4rem;
         // background-color: #b272f3;
       }
@@ -57,8 +59,9 @@
     }
 
     .vertical-timeline-element-content {
-        background-image: linear-gradient(135deg, #9796f0 10%, #ffdfe7 100%);
-        color: black;
+        // background-image: linear-gradient(135deg, #9796f0 10%, #ffdfe7 100%);
+        background-color: #16161a;
+        color: #9e9fa1;
         @include md{
           padding: 5px 0px 5px 17px;
 
@@ -68,7 +71,7 @@
       color: white !important;
     }
     .vertical-timeline-element-content-arrow {
-      border-right: 7px solid rgb(94, 0, 137);
+      border-right: 7px solid rgb(0, 0, 0);
     }
     .vertical-timeline-element-date {
       font-size: 1.5rem !important;
@@ -76,6 +79,7 @@
 
     .vertical-timeline-element-title {
       font-size: 1.5rem;
+      color: white;
     }
     p {
         font-size: 1.4rem;

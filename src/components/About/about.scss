@@ -71,7 +71,7 @@ padding-top: 0.9rem;
     width: 100%;
     // background-color: antiquewhite;
     // position: relative;
-    height: 262px;
+    height: 253px;
     
 //   background: #0f0e17;
     @include md{
@@ -115,6 +115,10 @@ padding-top: 0.9rem;
      position: relative; 
      border-radius: 5px; 
      height: 95%;
+     box-shadow: 7px 5px 11px #b2adad;
+    
+    
+    
 // margin: 50% auto;
      @include md{
          margin-left: 8rem;
