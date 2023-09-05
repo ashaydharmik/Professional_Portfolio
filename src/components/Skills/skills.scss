@@ -32,6 +32,7 @@
     text-align: center;
     width: 100%;
     padding-top: 1.3rem;
+   
     // height: 150vh;
     @include md{
       width: calc(100% - 20px);
@@ -43,6 +44,9 @@
       font-weight: bolder;
       letter-spacing: 1px;
       font-family: cursive;
+      // color: #7f5af0;
+      color: white;
+      filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
       @include md {
         font-size: 4rem;
         // background-color: #b272f3;
@@ -56,6 +60,7 @@
             font-weight: 600;
             line-height: 1.5;
             font-family: serif;
+            color: #9e9fa1;
       @include md{
         // width: calc(100% - 50px);
         font-size: 1.4rem;
@@ -65,7 +70,7 @@
         padding: 0;
      letter-spacing: normal;
      line-height: normal;
-     margin: 0 10rem 0 10rem;
+     margin: 2rem 15rem 2rem 15rem;
     //  background-color: #114aec;
 
       }
@@ -108,7 +113,8 @@
         border-radius: 5px;
         padding: 1rem;
         margin-bottom: 1rem;
-        background-image: linear-gradient(135deg, #efeef5 10%, #b272f3 100%);
+        // background-image: linear-gradient(135deg, #efeef5 10%, #b272f3 100%);
+        background-color: #16161a;
         filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
         .title {
           margin: 0 auto;
@@ -119,7 +125,8 @@
               sans-serif;
             font-size: 2rem;
             letter-spacing: 2px;
-            color: black;
+            // color: black;
+            color: white;
           }
           .content {
             margin-top: 2rem;
@@ -128,10 +135,13 @@
             justify-content: center;
             overflow: hidden;
             gap: 15px;
-            color: black;
+            // color: black;
+            color: #9e9fa1;
             font-weight: bold;
+            
             @include md{
               gap: 10px;
+              font-weight: bold;
             }
             .skill-img {
               span {
@@ -157,9 +167,11 @@
         flex-wrap: wrap;
         overflow: hidden;
         flex-direction: column;
-        border: 2px solid black;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px #949494;
         border-radius: 5px;
         padding: 1rem;
+        // background-color: #16161a;
         .heading {
           margin: 0 auto;
 
@@ -169,6 +181,7 @@
               sans-serif;
             font-size: 2rem;
             letter-spacing: 2px;
+            color: white;
           }
         }
         .circle-content {
@@ -181,7 +194,9 @@
           }
           .circle-1 {
             padding-top: 1rem;
-            background-image: linear-gradient(135deg, #efeef5 10%, #b272f3 100%);
+            // background-image: linear-gradient(135deg, #efeef5 10%, #b272f3 100%);
+            background-color: #16161a;
+            // background: #242629;
             width: 150px;
             height: 190px;
             display: flex;
@@ -193,7 +208,7 @@
             justify-content: space-between;
             // padding: 0.5rem;
             border-radius: 5px;
-            filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
+            // filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
             @include md{
               width: 200px;
               height: 182px;
@@ -205,6 +220,7 @@
               font-size: 1.6rem;
               font-weight: bold;
               text-align: center;
+              color: #949494;
             }
             .circle {
               width: 140px;

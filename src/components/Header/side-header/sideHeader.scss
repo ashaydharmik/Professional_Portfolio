@@ -20,7 +20,8 @@
   .cartWindow {
     
     background: rgb(241,239,246);
-background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991275733926383) 99%);
+// background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991275733926383) 99%);
+background: #16161a;
     width: 100%;
     height: 100%;
     transform: translateX(100%);
@@ -39,6 +40,7 @@ background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991
     
       h1 {
         font-size: 25px;
+        color: white;
        
       }
       .cart-btn {
@@ -52,6 +54,7 @@ background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991
           font-size: 23px;
           padding: 5px;
           padding-top: 8px;
+          color: white;
          
         }
        
@@ -76,7 +79,8 @@ background: linear-gradient(302deg, rgba(241,239,246,1) 0%, rgba(146,5,226,0.991
             /* top: 10px; */
             padding-top: 11px;
             &:hover{
-                background: rgb(146,5,226);
+                // background: rgb(146,5,226);
+                background-color: #16161a;
                 
             }
             a {

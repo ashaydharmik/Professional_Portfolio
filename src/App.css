@@ -2,8 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    /* background: #242629; */
 }
 html{
     font-size: 62.5%;
  
+}
+body{
+    background: #242629;
 }

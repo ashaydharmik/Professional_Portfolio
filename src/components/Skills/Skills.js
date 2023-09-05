@@ -92,8 +92,8 @@ const Skills = ()  => {
                 <h2>Analytical skills</h2>
               </div>
               <div className="circle-content">
-                <div className="circle-1">
-                  <div className="circle">
+                <div className="circle-1" >
+                  <div className="circle" >
                     <p>80%</p>
                   </div>
                   <div id="desc">
