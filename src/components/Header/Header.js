@@ -7,7 +7,7 @@ import { ImCancelCircle } from "react-icons/im";
 import SideHeader from "./side-header/SideHeader";
 import { Link } from "react-router-dom";
 import Home from "../Home/Home";
-
+import logo from "../assets/logo.gif";
 const Header = () => {
   const [scrolled,setScrolled] = useState(false)
     const [mode,setMode] = useState(false)
@@ -44,9 +44,10 @@ useEffect(()=>{
         <div className="nav">
           <div className="left">
             <Link  to={"/"}>
-            <p>
-              ASH<span>AY</span>
-            </p>
+            
+              {/* ASH<span>AY</span> */}
+              <img id="logo" src={logo} alt="" style={{width:"40px", height:"40px", borderRadius:"50%",marginTop:"0.6rem"}}/>
+            
             
             </Link>
           </div>

@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.gif";
 import "./footer.scss";
 const Footer = () => {
   const location = useLocation();
@@ -14,7 +15,7 @@ const Footer = () => {
     <>
       <section className="footer-container">
         <div className="heading">
-          <p>Ashay Dharmik</p>
+        <img src={logo} alt="" style={{width:"40px", height:"40px", borderRadius:"50%",marginTop:"0.6rem" }}/>
         </div>
         <div className="menu">
           <ul className="ul-nav">
