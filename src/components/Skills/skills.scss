@@ -217,7 +217,7 @@
             .circle {
               width: 140px;
               height: 140px;
-              background-image: conic-gradient(rgb(0, 13, 255) 0deg, white 0deg);
+              background-image: conic-gradient(rgba(144, 0, 255, 0.831372549) 0deg, white 0deg);
               position: relative;
               border-radius: 50%;
               position: relative;
@@ -249,21 +249,21 @@
 
 @keyframes animate1 {
   100%{
-background-image: conic-gradient(rgb(0, 13, 255)288deg, white 0deg);
+background-image: conic-gradient(rgba(144, 0, 255, 0.831372549) 288deg, white 0deg);
   }
 }
 @keyframes animate2 {
   100%{
-background-image: conic-gradient(rgb(0, 13, 255)252deg, white 0deg);
+background-image: conic-gradient(rgba(144, 0, 255, 0.831372549) 252deg, white 0deg);
   }
 }
 @keyframes animate3 {
   100%{
-background-image: conic-gradient(rgb(0, 13, 255)270deg, white 0deg);
+background-image: conic-gradient(rgba(144, 0, 255, 0.831372549) 270deg, white 0deg);
   }
 }
 @keyframes animate4 {
   100%{
-background-image: conic-gradient(rgb(0, 13, 255)288deg, white 0deg);
+background-image: conic-gradient(rgba(144, 0, 255, 0.831372549) 288deg, white 0deg);
   }
 }

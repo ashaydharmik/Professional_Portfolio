@@ -20,7 +20,7 @@ const Footer = () => {
           <ul className="ul-nav">
             <Link to={"/"}>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
             </Link>
             <Link to={"/about"}>

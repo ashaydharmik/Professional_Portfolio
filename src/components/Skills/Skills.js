@@ -23,11 +23,11 @@ const Skills = ()  => {
           <div className="skill-left">
             <div className="box" >
               {FrontEnd.map((skill) => (
-                <div className="title">
+                <div className="title" key={skill.title}>
                   <h2>{skill.title}</h2>
                   <div className="content">
                     {skill.skills.map((item) => (
-                      <div className="skill-img">
+                      <div className="skill-img" key={item.id}>
                         <img style={{paddingBottom:"5px"}}
                           src={item.image}
                           alt=""
@@ -43,11 +43,11 @@ const Skills = ()  => {
             </div>
             <div className="box" >
               {BackEnd.map((skill) => (
-                <div className="title">
+                <div className="title" key={skill.title}>
                   <h2>{skill.title}</h2>
                   <div className="content">
                     {skill.skills.map((item) => (
-                      <div className="skill-img">
+                      <div className="skill-img" key={item.id}>
                         <img style={{paddingBottom:"5px"}}
                           src={item.image}
                           alt=""
@@ -63,11 +63,11 @@ const Skills = ()  => {
             </div>
             <div className="box" id="box2">
               {Others.map((skill) => (
-                <div className="title">
+                <div className="title" key={skill.title}>
                   <h2>{skill.title}</h2>
                   <div className="content">
                     {skill.skills.map((item) => (
-                      <div className="skill-img">
+                      <div className="skill-img" key={item.id}>
                         <img
                           src={item.image}
                           alt=""

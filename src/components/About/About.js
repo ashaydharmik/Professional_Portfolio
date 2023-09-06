@@ -58,21 +58,21 @@ const About = () => {
           <div className="description">
             <p>I am a perceptive and enthusiastic individual who is eager to study and delve deeply into subjects. With a strong dedication to using my talents to advance a company's objectives, I am constantly seeking opportunities to grow and learn in a supportive environment that exposes me to a variety of things. I am passionate about leveraging my skills to contribute to the success of organizations and make a meaningful impact.</p>
           </div>
-          <div class="information">
+          <div className="information">
             <div className="box1">
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <FaUserAlt />
               </span>
               <span>Ashay Dharmik</span>
             </div>
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <FaGraduationCap />
               </span>
               <span>Bachelor of Engineering (BE)</span>
             </div>
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <ImPhone />
               </span>
@@ -80,19 +80,19 @@ const About = () => {
             </div>
             </div>
             <div className="box2">
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <MdEmail />
               </span>
               <span>ashaydharmik807@gmail.com</span>
             </div>
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <FaAddressCard />
               </span>
               <span>Bengaluru, Karnataka</span>
             </div>
-            <div class="info-box">
+            <div className="info-box">
               <span>
                 <FaBirthdayCake />
               </span>
