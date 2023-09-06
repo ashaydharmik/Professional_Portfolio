@@ -23,13 +23,22 @@ export const projectData = [
     host:"https://github.com/ashaydharmik/To-Do_List",
     github:"https://github.com/ashaydharmik/To-Do_List",
 },
+  
   {  
     image:require("../components/assets/projects/wordCounter.png"),
     name: "WordCounter App", 
-    category: "Dynamic WebPage",
-    description:"A Word Counter is a Web App where using can count the typed words and calculate the time to read it.",
+    category: "Web App",
+    description:"A Word Counter is a Web App where user can count the typed words and calculate the time to read it.",
     host:"https://ashaydharmik.github.io/WordCounter-React/",
     github:"https://github.com/ashaydharmik/WordCounter-React",
+},
+  {  
+    image:require("../components/assets/projects/rps.png"),
+    name: "Rock-Paper-Scissor", 
+    category: "Web App",
+    description:"A Rock-Paper-Scissor Game is a Web App where user and computer both choose their preference simultaneously and get results.",
+    host:"https://ashaydharmik.github.io/Rock-Paper-Scissor-Game/",
+    github:"https://github.com/ashaydharmik/Rock-Paper-Scissor-Game",
 },
   {  
     image:require("../components/assets/projects/userAuth.png"),

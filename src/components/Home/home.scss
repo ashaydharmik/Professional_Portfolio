@@ -1,14 +1,6 @@
 @import "../css-config/mixins.scss";
 
- body {
-   //   //   background-image: linear-gradient(
-     //   //     288deg,
-//   //     rgba(0, 85, 255, 1) 1.5%,
-//   //     rgba(4, 56, 115, 1) 91.6%
-//   //   );
-//   // background-image: linear-gradient(135deg, #8583ec 10%, #f9d1da 100%);
-//   // background-image: linear-gradient(135deg,#2A2A72 10%, #009FFD 100% );
-}
+
 .home {
   // height: 100vh;
   height: calc(100vh - 5rem);
@@ -169,6 +161,7 @@ font-weight: normal;
         outline: none;
         cursor: pointer;
         filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
+        border: 1px solid white;
         @include md{
           gap: 10px;
           width: 15rem;
@@ -275,6 +268,7 @@ position: absolute;
       }
     }
   }
+ 
 }
 
 
@@ -368,3 +362,4 @@ position: absolute;
     transform: translateX(-15px);
   }
 }
+

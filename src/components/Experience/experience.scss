@@ -1,29 +1,16 @@
 @import "../css-config/mixins.scss";
 
 
-#seperator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 17px;
-  @include md{
-    display: none;
-}
-  img{
-      width: 200px;
-  height: 14px;
-  }
-}
+
 .exp-container {
   width: 100%;
   
-  margin-top: 30px;
+  margin-top: 20px;
 //   margin-bottom: 10px;
 @include md{
   height: 100vh;
-  // margin-top: 15rem;
-  margin-bottom: 5rem;
+  margin-top: 20px;
+  margin-bottom: 10rem;
 }
   .heading {
     margin: 0 auto;

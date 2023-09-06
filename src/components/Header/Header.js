@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
@@ -6,23 +6,41 @@ import { FaBars } from "react-icons/fa";
 import { ImCancelCircle } from "react-icons/im";
 import SideHeader from "./side-header/SideHeader";
 import { Link } from "react-router-dom";
+import Home from "../Home/Home";
 
 const Header = () => {
+  const [scrolled,setScrolled] = useState(false)
     const [mode,setMode] = useState(false)
     // const [toggle,setToggle] = useState(false)
 const [showHeader, setShowHeader] =useState(false)
 
+
     const handleMode=()=>{
         setMode(!mode)
+        // document.body.style.backgroundColor = changeColor ? "" : "purple";
     }
     // const handleToggle=()=>{
     //     setToggle(!toggle)
     // }
 
+    const handleScroll=()=>{
+      const offset = window.scrollY.toFixed(2);
+      // console.log(offset)
+      if(offset > 600){
+        setScrolled(true)
+      }else{
+        setScrolled(false)
+      }
+    }
+
+useEffect(()=>{
+  window.addEventListener("scroll", handleScroll)
+},[])
+
     
   return (
     <>
-      <section className="navbar">
+      <section className={`navbar  ${scrolled ? "nav-sticky" : ""} ${mode ? "changeColor" : ""}`}>
         <div className="nav">
           <div className="left">
             <Link  to={"/"}>
@@ -44,11 +62,11 @@ const [showHeader, setShowHeader] =useState(false)
               </ul>
             </div>
           </div>
-          <div className="right">
+          <div className={`right `}>
             <span className="mode">
-              <span className="night" onClick={handleMode}>
+              <span className={`night`} onClick={handleMode}>
                 {
-                    mode? <FaSun />:<FaMoon/>
+                    mode? <FaMoon />:<FaSun/>
                 }
               </span>
             </span>
@@ -67,7 +85,9 @@ const [showHeader, setShowHeader] =useState(false)
         </div>
       </section>
       {showHeader && <SideHeader setShowHeader={setShowHeader}/>}
+     
     </>
+    
   );
 };
 

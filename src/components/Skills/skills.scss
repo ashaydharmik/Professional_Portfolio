@@ -1,29 +1,16 @@
 @import "../css-config/mixins.scss";
 
 
-#seperator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 17px;
-  @include md{
-    display: none;
-}
-  img{
-      width: 200px;
-  height: 14px;
-  }
-}
+
 .skill-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   @include md {
 
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
     height: 100vh;
     // background-color: #a3c0f4;
   }
@@ -86,7 +73,7 @@
     flex-direction: column;
     @include md{
       flex-direction: row;
-      
+    
     }
     .skill-left {
       width: calc(100% - 20px);
@@ -100,7 +87,8 @@
   gap: 15px;
   grid-template-areas: 
   "one auto two"
-  "auto three auto"
+  "auto three auto";
+  padding-bottom: 5rem;
 }
 #box2{
   @include md{
@@ -162,6 +150,7 @@
       @include md{
         width: 45%;
         margin: auto;
+        padding-bottom: 5rem;
       }
       .box-2 {
         display: flex;

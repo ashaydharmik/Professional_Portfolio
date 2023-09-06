@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.scss";
 import img from "../assets/bg-img.png";
 import person from "../assets/person.png";
@@ -12,13 +12,13 @@ import Experience from "../Experience/Experience";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
+
 const Home = () => {
-
-
+ 
   
   return (
     <>
-      <section className="home">
+      <section className={`home`}>
         <div className="social">
           <p style={{ "--i": 1 }}>
            <a href="https://www.instagram.com/i_ashay07/" target="_blank"><FaInstagram /></a>

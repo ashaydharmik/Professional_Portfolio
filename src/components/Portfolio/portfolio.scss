@@ -1,26 +1,13 @@
 @import "../css-config/mixins.scss";
 
 
-#seperator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 17px;
-  @include md{
-    display: none;
-}
-  img{
-      width: 200px;
-  height: 14px;
-  }
-}
+
 .port-container {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   height: 100%;
   @include md{
-    // margin-top: 15rem;
+    margin-top: 20px;
     margin-bottom: 5rem;
 
   }
@@ -76,14 +63,18 @@
         font-size: 1.1rem;
         font-weight: bolder;
         letter-spacing: 1px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 3px 3px 0px 0px rgb(126, 125, 125);
         @include md{
         padding: 10px 15px;
         font-size: 1.5rem;
-        box-shadow: 3px 3px 0px 0px rgb(126, 125, 125);
+        
       }
         &.active {
           background-color: #ffffff;
           color:#000000;
+          border: 1px solid black;
+          transform: translateX(4px) translateY(4px);
           filter: drop-shadow(-1px 1px 4px rgb(154, 154, 154));
         }
       }
@@ -109,14 +100,14 @@
         flex-wrap: wrap;
         /* gap: 10px; */
         width: 170px;
-        height: 265px;
+        height: 283px;
         background-color: #16161a;
         /* overflow: hidden; */
         align-items: center;
         padding-top: 10px;
         @include md{
           width: 262px;
-    height: 297px;
+    height: 310px;
         }
         .img-container {
           width: 150px;

@@ -9,14 +9,16 @@ import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import { useState } from 'react';
 
 function App() {
+  
   return (
     <>
 <BrowserRouter>
-<Header/>
+<Header />
 <Routes>
-  <Route path='/' element={<Home/>}/>
+  <Route path='/' element={<Home/>}  />
   <Route path='/about' element={<About/>} />
   <Route path='/skills' element={<Skills/>}/>
   <Route path='/Experience' element={<Experience/>}/>

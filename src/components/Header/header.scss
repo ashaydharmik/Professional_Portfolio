@@ -16,8 +16,10 @@
   //     rgba(241, 239, 246, 1) 0%,
   //     rgba(208, 126, 255, 0.837) 91%
   //   );
+  display: block;
+    z-index: 99;
   background: #0f0e17;
-    
+  // position: sticky;
   @include md{
     // background: rgb(184, 67, 250);
     // background: linear-gradient(
@@ -25,8 +27,10 @@
     //   rgba(208, 126, 255, 0.837) 0%,
     //   rgba(241, 239, 246, 1) 91%
     // );
+    // position: sticky;
     background: #0f0e17;
-    
+    display: block;
+    z-index: 99;
     // border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     // box-shadow: 0px 4px 10px #626161 !important;
   }
@@ -141,6 +145,7 @@
         opacity: 0;
         animation: slideTop 1s ease forwards;
         button {
+          
           background-color: #9000ffd4;
           color: white;
           font-weight: 600;
@@ -160,10 +165,11 @@
             height: 3rem;
             width: 10rem;
             display: inline-block;
+            border: 1px solid white;
           }
         }
         button:active {
-          box-shadow: 0 0 0 navy;
+          box-shadow: 0 0 0 rgb(88 0 109 / 96%);
           transform: translateX(4px) translateY(4px);
         }
       }
@@ -186,8 +192,67 @@
       }
     }
   }
+
+    &.nav-sticky{
+        position: sticky;
+        top: 0;   
+        display: block; 
+        animation: stickyHeader 0.3s ease forwards;
+    }
+    &.changeColor{
+      background: linear-gradient(302deg, rgb(164 74 253) 0%, rgb(162 0 255 / 100%) 100%);
+      display: block;
+      z-index: 99;
+      .left{
+        p{
+          color: black;
+          span{
+            color: black;
+          }
+        }
+      }
+      .center{
+        .nav-links{
+        .ul-nav{
+          li {
+            a{
+            color: black;
+            &::after{
+              background-color: black;
+            }
+          }
+        }
+        }
+      }
+      }
+      .right{
+        .mode{
+
+          .night{
+            svg{
+
+              color: black;
+            }
+          }
+        }
+        .talk{
+          button{
+            border: 1px solid black;
+          }
+        }
+      }
+    }
+  
 }
 
+@keyframes stickyHeader {
+  0%{
+    transform: translateY(-60px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 @keyframes slideRight {
   0% {
     transform: translateX(-100%);

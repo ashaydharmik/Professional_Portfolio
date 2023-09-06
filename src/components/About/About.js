@@ -40,9 +40,7 @@ const About = () => {
   return (
     <>
    
-    {/* <div id="seperator"  >
-    <img src={seperator} alt="" width="20px" height="5px"/>
-    </div> */}
+   
       <div className="about-container" style={{pageStyle}}>
         <div className="heading">
         <h1>About Me</h1>

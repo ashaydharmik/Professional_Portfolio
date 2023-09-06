@@ -1,26 +1,13 @@
 @import "../css-config/mixins.scss";
 
 
-#seperator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // margin-top: 17px;
-  @include md{
-    display: none;
-}
-  img{
-      width: 200px;
-  height: 14px;
-  }
-}
+
 .contact-container {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   @include md{
     
-    // margin-top: 10rem;
+    margin-top: 20px;
     margin-bottom: 5rem;
   }
   .heading {
@@ -281,10 +268,16 @@
           filter: drop-shadow(-1px 1px 4px rgb(128, 128, 128));
             color: white;
             cursor: pointer;
+            border: 1px solid white;
+            transition: transform 0.2s, box-shadow 0.2s;
             @include md{
               font-size: 2rem;
               height: 45px;
             }
+          }
+          button:active {
+            box-shadow: 0 0 0 rgb(88 0 109 / 96%);
+            transform: translateX(4px) translateY(4px);
           }
         }
       }
