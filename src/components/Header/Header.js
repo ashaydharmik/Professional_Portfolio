@@ -8,24 +8,20 @@ import SideHeader from "./side-header/SideHeader";
 import { Link } from "react-router-dom";
 import Home from "../Home/Home";
 import logo from "../assets/logo.gif";
+
 const Header = () => {
   const [scrolled,setScrolled] = useState(false)
     const [mode,setMode] = useState(false)
-    // const [toggle,setToggle] = useState(false)
 const [showHeader, setShowHeader] =useState(false)
 
 
     const handleMode=()=>{
         setMode(!mode)
-        // document.body.style.backgroundColor = changeColor ? "" : "purple";
+        
     }
-    // const handleToggle=()=>{
-    //     setToggle(!toggle)
-    // }
-
+    
     const handleScroll=()=>{
       const offset = window.scrollY.toFixed(2);
-      // console.log(offset)
       if(offset > 600){
         setScrolled(true)
       }else{
@@ -36,6 +32,8 @@ const [showHeader, setShowHeader] =useState(false)
 useEffect(()=>{
   window.addEventListener("scroll", handleScroll)
 },[])
+
+
 
     
   return (
@@ -70,6 +68,7 @@ useEffect(()=>{
                     mode? <FaMoon />:<FaSun/>
                 }
               </span>
+              
             </span>
             <span className="talk">
               <Link to={"/contact"}>

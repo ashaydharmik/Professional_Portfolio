@@ -49,6 +49,14 @@ export const projectData = [
     github:"https://github.com/ashaydharmik/User-Auth-App",
 },
   {  
+    image:require("../components/assets/projects/movie-search.png"),
+    name: "Movie-Search-Engine", 
+    category: "Dynamic WebPage",
+    description:"A Movie Search Application platform build using React.js with TMDB API that helps you to search for your favorite movies and gives you the overview of recent films..",
+    host:"https://movie-collection-app.netlify.app/",
+    github:"https://github.com/ashaydharmik/Movie_Search_App",
+},
+  {  
     image:require("../components/assets/projects/portfolio.png"),
     name: "Simple Portfolio", 
     category: "Dynamic WebPage",
