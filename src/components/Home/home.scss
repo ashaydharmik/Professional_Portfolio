@@ -190,6 +190,7 @@ font-weight: normal;
     // display: none;
     @include md{
       display: block;
+      top: 0;
     }
     img {
       // max-width: 100%;
