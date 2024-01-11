@@ -9,7 +9,7 @@ import { FaBirthdayCake } from "react-icons/fa";
 import { AiFillCaretDown } from "react-icons/ai";
 import seperator from "../assets/seperator.png"
 import bg2 from "../assets/bg2.jpg"
-import person2 from "../assets/person2.png"
+import pro from "../assets/pro.png"
 import { useLocation } from 'react-router-dom';
 // import Skills from "../Skills/Skills";
 const About = () => {
@@ -49,7 +49,7 @@ const About = () => {
 
         <div className="about-img">
           {/* <img src={bg2} alt="" id="bg-2" /> */}
-          <img src={person2} alt="" id="person-2"/>
+          <img src={pro} alt="" id="person-2"/>
         </div>
         <div className="img-info">
           <div className="heading">

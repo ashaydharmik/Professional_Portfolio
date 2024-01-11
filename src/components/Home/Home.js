@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.scss";
 import img from "../assets/bg-img.png";
-import person from "../assets/person.png";
+import profile3 from "../assets/profile3.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -42,10 +42,11 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Web Developer",
+                    "Mern Stack Developer",
                     "FrontEnd Developer",
-                    "MernStack Developer",
+                    "WordPress Developer",
                     "FullStack Developer",
+                    "Web Page Designer"
                   ],
                   autoStart: true,
                   loop: true,
@@ -67,7 +68,7 @@ const Home = () => {
         </div>
         <div className="content_two">
           <img src={img} alt="" id="splash"></img>
-          <img src={person} id="user" alt=""></img>
+          <img src={profile3} id="user" alt=""></img>
         </div>
       </section>
 

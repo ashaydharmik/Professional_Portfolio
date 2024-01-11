@@ -18,18 +18,7 @@ const Experience = () => {
           <h1>Experience</h1>
         </div>
         <VerticalTimeline lineColor="linear-gradient(135deg, #E2B0FF 10%, #9F44D3 100%);">
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="Till 2017"
-            iconStyle={{background: "#9000ff", color: "white" }}
-            icon={<MdSchool />}
-            
-          >
-            <h3 className="vertical-timeline-element-title">
-              Ramesh Chandak English School, Nagpur, Maharashtra
-            </h3>
-            <p>High school </p>
-          </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2017 - 2020"
@@ -76,6 +65,17 @@ const Experience = () => {
               SHLR TECHNOSOFT PVT.LTD
             </h3>
             <p>Internship - Worked as Software Developer Intern</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="23-Nov-2023 onwards"
+            iconStyle={{background: "#9000ff", color: "white" }}
+            icon={<FaBuilding />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Quantum IT Innovation
+            </h3>
+            <p>Internship - Working as Frontend Developer</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

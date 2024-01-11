@@ -8,7 +8,7 @@ const Portfolio = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(projectData);
 
-  let filters = ["Web App", "Dynamic WebPage", "Static WebPage", "Figma"];
+  let filters = [ "Dynamic WebApp","Web Development", "Designs"];
 
   const handleFilterButtonClick = (selectedCategory) => {
     if (selectedFilters.includes(selectedCategory)) {
