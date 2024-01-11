@@ -65,14 +65,6 @@ export const projectData = [
     github:"https://github.com/ashaydharmik/Rock-Paper-Scissor-Game",
 },
 
-  {  
-    image:require("../components/assets/projects/portfolio.png"),
-    name: "Simple Portfolio", 
-    category: "Dynamic WebApp",
-    description:"A simple yet responsive Portfolio build using html,css and javascript.",
-    host:"https://ashaydharmik.github.io/Responsive-portfolio/",
-    github:"https://github.com/ashaydharmik/Responsive-portfolio",
-},
 
   {  
     image:require("../components/assets/projects/static1.png"),
