@@ -62,7 +62,7 @@ const Home = () => {
             </p>
           </div>
           <div className="buttons">
-          <a href="https://drive.google.com/file/d/1jWgEUWjzPMpYbcBei5DTw0cwnpLTHxAo/view?usp=drive_link" target="_blank"><button>Download CV</button></a>
+          <a href="https://drive.google.com/file/d/1sCy6y4fyEC_sRcwtyaNjgF_uCFgcouNM/view?usp=drive_link" target="_blank"><button>Download CV</button></a>
           <Link to={"/about"}><button>Hire Me</button></Link>
           </div>
         </div>
