@@ -140,6 +140,11 @@ export const Others = [
         name: "xampp",
         image: require("../components/assets/xampp.jpeg"),
       },
+      {
+        id: "8",
+        name: "Render",
+        image: require("../components/assets/render.jpeg"),
+      },
     ],
   },
 ];

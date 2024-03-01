@@ -15,7 +15,7 @@ const Experience = () => {
     
       <div className="exp-container">
         <div className="heading">
-          <h1>Experience</h1>
+          <h1>Education & Experience</h1>
         </div>
         <VerticalTimeline lineColor="linear-gradient(135deg, #E2B0FF 10%, #9F44D3 100%);">
           

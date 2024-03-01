@@ -1,5 +1,13 @@
 export const projectData = [
   {  
+    image:require("../components/assets/projects/pro-mgmt-app.jpg"),
+    name: "Project-Mgmt-App", 
+    category: "Dynamic WebApp",
+    description:"Create a MERN project management tool with task CRUD, task lists, kanban boards, and progress tracking.",
+    host:"https://pro-management-app.netlify.app/",
+    github:"https://github.com/ashaydharmik/ashaydharmik807-gmail.com_cuvette_final_evaluation_June",
+  },
+  {  
     image:require("../components/assets/projects/job-portal.jpg"),
     name: "Job-Portal", 
     category: "Dynamic WebApp",
@@ -27,7 +35,7 @@ export const projectData = [
       image:require("../components/assets/projects/movie-search.png"),
       name: "Movie-Search-Engine", 
       category: "Dynamic WebApp",
-      description:"A Movie Search Application platform build using React.js with TMDB API that helps you to search for your favorite movies and gives you the overview of recent films..",
+      description:"Build a React.js Movie Search App using TMDB API for finding and exploring favorite movies with recent film overviews.",
       host:"https://movie-collection-app.netlify.app/",
       github:"https://github.com/ashaydharmik/Movie_Search_App",
   },
