@@ -1,5 +1,12 @@
 export const projectData = [
+  
   {  
+    image:require("../components/assets/projects/onestop.jpg"),
+    name: "OneStopLighting", 
+    category: "Dynamic WebApp",
+    description:"OneStopLighting offers a range of lighting and fans for residential and commercial spaces, available online and in-store.",
+    host:"https://onestoplighting.com.au/",
+},{  
     image:require("../components/assets/projects/pro-mgmt-app.jpg"),
     name: "Project-Mgmt-App", 
     category: "Dynamic WebApp",
@@ -15,6 +22,7 @@ export const projectData = [
     host:"https://job-portal-platform.netlify.app/",
     github:"https://github.com/ashaydharmik/Job-portal",
   },
+  
   {  
     image:require("../components/assets/projects/super-app.jpg"),
     name: "All-in-one App", 
@@ -106,12 +114,6 @@ export const projectData = [
     host:"https://drive.google.com/file/d/1fnnRXIEEKwNdMTrBr2Wxuq9o_rQh5p4H/view?usp=sharing",
     github:"https://drive.google.com/file/d/1fnnRXIEEKwNdMTrBr2Wxuq9o_rQh5p4H/view?usp=sharing",
 },
-  {  
-    image:require("../components/assets/projects/figma.png"),
-    name: "OneStopLighting", 
-    category: "CMS",
-    description:"OneStopLighting offers a range of lighting and fans for residential and commercial spaces, available online and in-store.",
-    host:"https://onestoplighting.com.au/",
-},
+  
   
 ];
