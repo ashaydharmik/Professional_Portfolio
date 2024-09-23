@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { MdSchool } from "react-icons/md";
 import { FaUniversity } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa";
-import seperator from "../assets/seperator.png"
+
 const Experience = () => {
   return (
     <>
