@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div className="content_one">
           <div className="heading">
-            <span className="hello">Hello_</span>
+            <span className="hello">Hello</span>
             <h1>
               I'm <span>Ashay Dharmik</span>
             </h1>
